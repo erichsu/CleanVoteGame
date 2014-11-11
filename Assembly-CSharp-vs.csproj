@@ -46,14 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\EnemyAttackScript.cs" />
      <Compile Include="Assets\Scripts\KerPControllerScript.cs" />
- <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>/Users/eric_hsu/workspace/CleanVote/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
- </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{1C95B983-D48E-63F6-CC6B-DD7777F1F212}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+     <Compile Include="Assets\Scripts\LienDControllerScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
