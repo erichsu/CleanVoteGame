@@ -5,6 +5,8 @@ public class EnemyAttackScript : MonoBehaviour {
 
 	public float minTimeBetweenAttack;
 	public float maxTimeBetweenAttack;
+	public float leftBoundPosX;
+	public float rightBoundPosX;
 	public Rigidbody2D blackBall;
 
 	// Use this for initialization
@@ -25,10 +27,10 @@ public class EnemyAttackScript : MonoBehaviour {
 		yield return new WaitForSeconds(waitTime);
 		
 		// If the prop is facing left, it should start on the right hand side, otherwise it should start on the left.
-		float posX = GameObject.Find ("Lien D").transform.position.x;
+		float posX = Random.Range(leftBoundPosX, rightBoundPosX);
 		
 		// Create a random y coordinate for the prop.
-		float posY = GameObject.Find ("Lien D").transform.position.y;
+		float posY = GameObject.Find ("Lien D").transform.position.y + 2f;
 		
 		// Set the position the prop should spawn at.
 		Vector3 pos = new Vector3(posX, posY, transform.position.z);
