@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour
 	private float lastHitTime;					// The time at which the player was last hit.
 	private Vector3 healthScale;				// The local scale of the health bar initially (with full health).
 //	private PlayerControl playerControl;		// Reference to the PlayerControl script.
-	private Animator anim;						// Reference to the Animator on the player
+//	private Animator anim;						// Reference to the Animator on the player
 
 
 	void Awake ()
@@ -21,7 +21,7 @@ public class PlayerHealth : MonoBehaviour
 		// Setting up references.
 //		playerControl = GetComponent<PlayerControl>();
 		healthBar = GameObject.Find("HealthBar").GetComponent<SpriteRenderer>();
-		anim = GetComponent<Animator>();
+//		anim = GetComponent<Animator>();
 
 		// Getting the intial scale of the healthbar (whilst the player has full health).
 		healthScale = healthBar.transform.localScale;

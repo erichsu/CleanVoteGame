@@ -25,10 +25,10 @@ public class EnemyAttackScript : MonoBehaviour {
 		yield return new WaitForSeconds(waitTime);
 		
 		// If the prop is facing left, it should start on the right hand side, otherwise it should start on the left.
-		float posX = Random.Range(-1.6f, 2.4f);;
+		float posX = GameObject.Find ("Lien D").transform.position.x;
 		
 		// Create a random y coordinate for the prop.
-		float posY = 1.18f;
+		float posY = GameObject.Find ("Lien D").transform.position.y;
 		
 		// Set the position the prop should spawn at.
 		Vector3 pos = new Vector3(posX, posY, transform.position.z);
