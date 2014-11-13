@@ -33,7 +33,11 @@ public class PlayerHealth : MonoBehaviour
 		// If the colliding gameobject is an Enemy...
 		if(col.gameObject.tag == "Enemy")
 		{
-			Destroy(col.gameObject);
+
+			Animator anim = col.gameObject.GetComponent<Animator>();
+			anim.SetTrigger("Explode");
+//			Destroy(col.gameObject);
+
 			// ... and if the time exceeds the time of the last hit plus the time between hits...
 			if (Time.time > lastHitTime + repeatDamagePeriod) 
 			{
