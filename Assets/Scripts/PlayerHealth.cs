@@ -36,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
 
 			Animator anim = col.gameObject.GetComponent<Animator>();
 			anim.SetTrigger("Explode");
-//			Destroy(col.gameObject);
+			col.collider.isTrigger = true;
 
 			// ... and if the time exceeds the time of the last hit plus the time between hits...
 			if (Time.time > lastHitTime + repeatDamagePeriod) 
