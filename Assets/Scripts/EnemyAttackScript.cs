@@ -49,8 +49,8 @@ public class EnemyAttackScript : MonoBehaviour {
 		// While the prop exists...
 		while(propInstance != null)
 		{
-//			if (propInstance.position.y < -4f)
-//				Destroy(propInstance.gameObject);
+			if (propInstance.position.y < -10f)
+				Destroy(propInstance.gameObject);
 			
 			// Return to this point after the next update.
 			yield return null;
