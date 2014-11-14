@@ -27,6 +27,8 @@ public class BoundDetector : MonoBehaviour {
 	{
 		if (punchPoint >= 100) {
 			punchPoint = 100f;
+			Animator fistAnim = GameObject.Find("Fist").GetComponent<Animator>();
+			fistAnim.SetBool("FistReady", true);
 			return;
 		}
 		// Reduce the player's health by 10.

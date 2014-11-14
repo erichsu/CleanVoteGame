@@ -5,6 +5,8 @@ public class SkillCounter : MonoBehaviour {
 
 	public float skillPoint = 0f;
 	public float skillAmount = 0.1f;
+	public Sprite skillReady;
+	public Sprite skillWaiting;
 
 	private Vector3 skillBarScale;
 
@@ -19,6 +21,7 @@ public class SkillCounter : MonoBehaviour {
 
 		if (skillPoint >= 100f) {
 			skillPoint = 100f;
+			GameObject.Find("Document").GetComponent<SpriteRenderer>().sprite = skillReady;
 			return;
 		}
 
