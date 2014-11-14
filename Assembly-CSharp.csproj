@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\BlackBallGUIText.cs" />
      <Compile Include="Assets\Scripts\BoundDetector.cs" />
      <Compile Include="Assets\Scripts\EnemyAttackScript.cs" />
+     <Compile Include="Assets\Scripts\FistAttack.cs" />
      <Compile Include="Assets\Scripts\KerPControllerScript.cs" />
      <Compile Include="Assets\Scripts\LienDControllerScript.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
